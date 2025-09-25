@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 8</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .tt {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: green;
+      margin: 15px 0;
+    }
+    .a {
+      width: 600px;
+      margin: 0 auto;
+      border: 2px solid green;
+      background-color: #f2fff2;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    td {
+      color: rgb(98, 162, 2);
+      border: 1px solid green;
+      padding: 6px;
+      background-color: #eaffea;
+    }
+  
+    input[type="text"]{
+      border: 1px solid green;
+      padding: 3px;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+    .short {
+       width: 120px;
+       }
+    .medium {
+       width: 250px; 
+      }
+    .long { 
+      width: 350px;
+     }
+    .button {
+      text-align: center;
+      padding: 10px;
+    }
+    input[type="submit"] {
+      padding: 3px 12px;
+      background-color: #ddd;
+      border: 1px solid black;
+      cursor: pointer;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="tt">Phiếu đăng ký tham gia chương trình khuyến mãi</div>
+  <div class="a">
+    <form>
+      <table>
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" class="long"></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td><input type="text" class="medium"></td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td><input type="text" class="short"></td>
+        </tr>
+        <tr>
+          <td>Phái</td>
+          <td>
+            <input type="radio" name="phai"> Nam
+            <input type="radio" name="phai"> Nữ
+          </td>
+        </tr>
+        <tr>
+          <td>Nghề nghiệp</td>
+          <td>
+            <select>
+              <option>Giáo viên</option>
+              <option>Sinh viên</option>
+              <option>Bác sĩ</option>
+              <option>Kỹ sư</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn sản phẩm tham gia</td>
+          <td>
+            <select size="4" multiple>
+              <option>Kem đánh răng</option>
+              <option>Bột giặt</option>
+              <option>Dầu gội đầu</option>
+              <option>Sữa tắm</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Số người dự đoán tham gia</td>
+          <td>
+            <input type="text" class="short" value="2500">
+          </td>
+        </tr>
+      </table>
+      <div class="button">
+        <input type="submit" value="Đồng ý">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
