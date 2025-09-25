@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký du lịch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .tt {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: darkblue;
+      margin: 15px 0;
+    }
+    .a {
+      width: 600px;
+      margin: 0 auto;
+      border: 1px solid #666;
+      background-color: #ffffcc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 6px;
+      border: 2px solid #ccc;
+    }
+    td.label {
+      width: 150px;
+      color: rgb(53, 214, 107);
+      font-weight: bold;
+    }
+    input[type="text"], select, textarea {
+      border: 1px solid #666;
+      padding: 2px;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+    .short { width: 120px; }
+    .medium { width: 250px; }
+    .long { width: 350px; }
+    .tour { width: 260px; } /* chỉnh cho select xổ xuống */
+    fieldset {
+      border: 1px solid brown;
+      padding: 5px 10px;
+      color: darkblue;
+    }
+    legend {
+      color: brown;
+      font-style: italic;
+    }
+    .button {
+      text-align: center;
+      padding: 10px;
+    }
+    input[type="submit"] {
+      padding: 4px 14px;
+      background-color: #eee;
+      border: 1px solid black;
+      cursor: pointer;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="tt">Đăng ký du lịch</div>
+  <div class="a">
+    <form>
+      <table>
+        <tr>
+          <td class="label">Họ và tên</td>
+          <td><input type="text" class="long"></td>
+        </tr>
+        <tr>
+          <td class="label">Địa chỉ</td>
+          <td><input type="text" class="medium"></td>
+        </tr>
+        <tr>
+          <td class="label">Điện thoại</td>
+          <td><input type="text" class="short"></td>
+        </tr>
+        <tr>
+          <td class="label">Khách Việt Nam</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td class="label">Chọn tour</td>
+          <td>
+            <select class="tour">
+              <option>Buôn mê thuột - Gia lai - Kontum</option>
+              <option>Đà Lạt - Nha Trang</option>
+              <option>Huế - Đà Nẵng</option>
+              <option>Hà Nội - Hạ Long</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Phương tiện</td>
+          <td>
+            <input type="radio" name="pt"> Máy bay
+            <input type="radio" name="pt"> Xe ô tô
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <fieldset>
+              <legend>Số lượng đoàn khách</legend>
+              Người lớn <input type="text" class="short">
+              Trẻ em <input type="text" class="short">
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Ghi chú thêm</td>
+          <td>
+            <textarea rows="3" cols="35"></textarea>
+          </td>
+        </tr>
+      </table>
+      <div class="button">
+        <input type="submit" value="Đồng ý">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
